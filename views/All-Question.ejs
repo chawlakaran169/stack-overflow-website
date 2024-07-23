@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document </title>
+</head>
+<style>
+  body {
+    background: rgb(0, 32, 36);
+
+    background: linear-gradient(to bottom, rgba(0, 32, 36, 1) 0%, rgba(255, 168, 124, 1) 100%);
+  }
+
+  .type h1 {
+    position: absolute;
+    left: 550px;
+    color: rgb(12, 91, 218);
+    font-size: 70px;
+    box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .btn {
+    height: 35px;
+    width: 80px;
+    position: absolute;
+    right: 50px;
+  }
+
+  /* .ull{
+    border: 2px solid white ;
+  } */
+</style>
+
+<body>
+  <a class="type">
+    <h1>All Questions</h1>
+  </a>
+  <br><br><br><br><br><br><br>
+  <a href="/question/home"> <button class="btn">Back To Home</button></a>
+
+
+  
+
+
+  
+  <% if (questions.length> 0) { %>
+    <ul class="ull">
+      <% questions.forEach(question=> { %>
+        <li style="list-style: none; color: white;">
+          <h2> TITLE : </h2>
+          <p>
+            <%= question.title %>
+          </p>
+          <h2>DESCRIPTION : </h2>
+          <h3>
+            <%= question.description %>
+          </h3>
+          <p>
+          <h2>RELATED TAGS</h2> : <%= question.related %>
+            </p>
+            <p><strong>POSTED ON: <%= question.createdAt.toDateString() %></strong></p>
+            
+            <a href="/answer-to-question"> <button>ANSWER</button></a>
+        </li>
+        <% }); %>
+    </ul>
+    <% } else { %>
+      <p>No questions found.</p>
+      <% } %>
+
+
+
+ 
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

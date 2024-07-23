@@ -1,0 +1,53 @@
+body {
+    /* background-image: url('5kzat.png'); */
+    background: linear-gradient(135deg,#BB1169,#5e2d55);
+    /* border: 2px solid red; */
+ position: relative;
+align-items: center;
+display: flex;
+justify-content: space-between; 
+left: 20px;
+margin: 30%;
+padding: 100px;
+bottom: 300px;
+box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
+
+}
+.btn{
+ /* padding: 20px ; */
+margin: 25px 2px; 
+width: 205px;
+height: 35px;
+background-color: rgb(12, 91, 218);
+color: white;
+}
+form li  {
+    margin: 10px;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+form  li {
+    
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+    left: 20px;
+    margin: 30%;
+    padding: 100px;
+    bottom: 200px;
+   
+}
+#list{
+    text-align: center;
+    padding-left:0 ;
+    margin: 20px;
+    padding: 100px;
+    
+}
+.sign{
+    font-size: 16px;
+}
+
+

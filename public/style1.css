@@ -1,0 +1,128 @@
+.body1{
+    background: linear-gradient(90deg,#7575dd,#5252d4);
+}
+.h31{
+    position: absolute;
+    left : 60px;
+    top: 1px; 
+
+}
+
+
+.btn{
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 35px;
+    background-color: rgb(49, 56, 255);
+    color: white;
+    width: 80px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.btn1{
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    height: 35px;
+    width: 80px;  
+   
+}
+
+.navBar  {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+/* border: 2px solid red; */
+position: absolute;
+right: 40%;
+
+}
+.navBar li  {
+margin-right: 30px;
+
+
+}
+.navBar a li  {
+     text-decoration: none; 
+    color: inherit; 
+    color: white;
+}
+.img{
+    height: 500px;
+    width: 500px;
+}
+
+a h1{
+     position: absolute; 
+    bottom: 500px;
+    color: white;
+    left: 50px;
+}
+a h4{
+    position: absolute; 
+    bottom: 430px;
+    color: white;
+    left: 50px;
+}
+.Btn{
+    border-radius: 5px;
+    height: 35px;
+    width: 80px; 
+    position: absolute; 
+    bottom: 380px;
+    left: 150px; 
+    background-color:rgb(49, 56, 255); 
+    color: white;
+}
+.Btn1{
+    border-radius: 5px;
+    height: 35px;
+    width: 80px;  
+    position: absolute; 
+    bottom: 380px;
+    left: 50px;
+    color: rgb(49, 56, 255);
+}
+/* css of question.ejs*/
+.form2{
+    /* border: 2px solid red; */
+    display: block;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.ask{
+    width: 500px;
+    height: 35px;
+    background-color: rgb(190, 236, 255);
+}
+.ask2{
+    width: 500px;
+    height: 250px;
+    background-color: rgb(190, 236, 255);
+}
+.ask3{
+    width: 500px;
+    height: 35px;
+    background-color: rgb(190, 236, 255);
+
+}
+.body2{
+    background: linear-gradient(110deg,#fdcd3b 60%,#ffed4b 60%);
+}
+.button{
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    height: 35px;
+    width: 80px;  
+    position: absolute; 
+   
+    right: 50px;
+   background-color : rgb(49, 56, 255);
+}

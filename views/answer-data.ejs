@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% if (answers.length > 0) { %>
+        <h3>Answers:</h3>
+        <ul>
+            <% answers.forEach(answer => { %>
+                <li>
+                    <p><%= answer.description %></p>
+                    <!-- <p>Answered by: <%= answer.postedBy.username %></p> -->
+                    <p>Answered on: <%= answer.createdAt.toDateString() %></p>
+                </li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>No answers yet.</p>
+    <% } %>
+    
+</body>
+</html>

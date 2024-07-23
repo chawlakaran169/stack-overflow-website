@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+</head>
+<style>
+    body{
+        margin: 0; 
+  padding: 0; 
+  height: 100vh;
+        
+        background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+        background-repeat:no-repeat;
+    }
+    .ull{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        justify-content: space-between;
+        display: flex;
+        text-align: center;
+        top: 100px;
+        position: absolute;
+        right: 35%;
+        /* border: 2px solid white; */
+        width: 400px;
+    }
+    .btn{
+        background-color: black;
+        color: white;
+        position: absolute;
+        right: 50px;
+        top: 20px;
+    }
+    .prof{
+        font-size: 40px;
+        justify-content: space-between;
+        display: flex;
+        text-align: center;
+        position: absolute;
+        right: 50%;
+    }
+    .btn1{
+        background-color: black;
+        color: white;
+        position: absolute;
+        left: 50px;
+        top: 20px;
+    }
+    .delete{
+        border: 2px solid black;
+        background: #ff99cc;
+        color: black;
+    }
+</style>
+<body>
+    <form action="/profile/logout" method="POST">
+        <button type="submit">Logout</button>
+      </form>
+    <div>
+        <a class="prof"><b>Profile</b></a>
+       <a href="/signup/home"> <button class="btn" >GO TO HOME </button></a>
+       <!-- <a href="/log-out/home"><button class="btn1">Log Out</button></a> -->
+      
+        <ul class="ull">
+            <% if(details.length>0){ %> 
+            <% details.forEach(User => { %>
+                <li style="list-style: none;">
+                    
+                    <h3>NAME :  <%= User.name %></h3>
+                    <h3>USERNAME :  <%= User.username %></h3>
+                    <h3> EMAIL :   <%= User.email%></h3>
+                    <h3 >PASSWORD:  <%= User.password %></h3>
+                
+                </li>
+                <% }) %>
+            <% } %>
+        </ul>
+    </div>
+
+   
+</body>
+</html>

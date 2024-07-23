@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="style.css" rel="stylesheet"> -->
+</head>
+
+<style>
+    body{
+        position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+    left: 20px;
+    margin: 30%;
+    padding: 100px;
+    bottom: 300px;
+    background-color: #d0bdf4;
+    /* border: 2px solid red; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    body  h4{
+        margin: 10px;
+        /* padding: 1px; */
+    }
+    .btn{
+        margin: 20px 2px; 
+width: 205px;
+height: 23px;
+background-color: rgb(12, 91, 218);
+color: white;
+    }
+</style>
+
+<body class="body1">
+    
+    <form class="form1"  action="/signup/bio" method="Post">
+        <h4> CREATE  A NEW ACCOUNT </h4>
+        <ul id="list">
+      <li style="list-style: none;">  <input type="text" placeholder="NAME" name="name" style="width: 200px; height: 23px;"  required></li><br>
+      <li style="list-style: none;"> <input type="text" placeholder="USERNAME" name="username" style="width: 200px; height: 23px;" required></li><br>
+      <li style="list-style: none;"><input type="password" placeholder="PASSWORD" name="password" style="width: 200px; height: 23px;" required></li><br>
+      <li style="list-style: none;"> <input type="text" placeholder="EMAIL ADDRESS" name="email" style="width: 200px; height: 23px;" required></li><br>
+      <button class="btn" type="submit"> Sign Up</button>
+    </ul>
+    </form>
+</body>
+</html>
